@@ -8,6 +8,7 @@ import {BrowserRouter, Switch, Route ,} from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import MyCalendar from './components/MyCalendar'
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Customerlist} />
             <Route exact path="/trainings" component={Trainings} />
+            <Route exact path="/calendar" component={MyCalendar} />
           </Switch>
         </div>
       </BrowserRouter>
